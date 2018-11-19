@@ -1,0 +1,24 @@
+<suite name = "Test Scenario 1-Testing various functionalities on the homepage of Collaborator" parallel = "tests">
+	<test name = "Checking Login-Logout Feature on Firefox browser">
+		<groups>
+			<run>
+				<include name = "Smoke Testing"/>
+			</run>
+		</groups>
+		<parameter name = "browserType" value = "Firefox"/>
+		<classes>
+			<class name = "login.loginLogoutCheck"/>
+		</classes>
+	</test>
+	<test name = "Checking Login-Logout Feature on Chrome browser">
+		<groups>
+			<run>
+				<include name = "Smoke Testing"/>
+			</run>
+		</groups>
+		<parameter name = "browserType" value = "Chrome"/>
+		<classes>
+			<class name = "login.loginLogoutCheck"/>
+		</classes>
+	</test>
+</suite>
